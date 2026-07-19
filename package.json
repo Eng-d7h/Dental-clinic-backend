@@ -4,10 +4,10 @@
   "description": "",
    "main": "src/server.ts",
   "scripts": {
-    "dev": "tsx watch src/server.ts",
-    "build": "prisma generate",
-    "start": "tsx src/server.ts"
-  },
+  "dev": "tsx watch src/server.ts",
+  "build": "prisma generate",
+  "start": "npx prisma migrate deploy && tsx src/server.ts"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
